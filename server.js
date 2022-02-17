@@ -1,6 +1,6 @@
 const express = require("express");
 const methodOverride = require("method-override");
-const { sequelize, data, Thing, Todo } = require("./db");
+const { data, Thing, Todo } = require("./db");
 const app = express();
 app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: false }));

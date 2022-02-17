@@ -37,11 +37,6 @@ const data = async (req, res, next) => {
     await Thing.create({ name: "dealer choice", todoId: homework.id });
     await Thing.create({ name: "clean the toilet", todoId: housework.id });
     await Thing.create({ name: "feed the cat", todoId: housework.id });
-
-    const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => {
-      console.log(`server listening at PORT ${PORT}`);
-    });
   } catch (e) {
     console.log(e);
   }
