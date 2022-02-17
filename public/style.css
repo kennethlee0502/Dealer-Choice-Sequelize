@@ -1,0 +1,251 @@
+body {
+  background: #ffffff;
+}
+
+.Iam {
+  padding: 0.5em 0.5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: rgb(0, 0, 0);
+}
+.Iam p {
+  height: 20px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #fc1c04;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+  /*animation*/
+  -webkit-animation: move 5s;
+  -moz-animation: move 5s;
+  -ms-animation: move 5s;
+  -o-animation: move 5s;
+  animation: move 5s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /*animation-delay*/
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-moz-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-o-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (hover: hover) {
+  #creditcard {
+    /*  set start position */
+    transform: translateY(110px);
+    transition: transform 0.1s ease-in-out;
+    /*  set transition for mouse enter & exit */
+  }
+
+  #money {
+    /*  set start position */
+    transform: translateY(180px);
+    transition: transform 0.1s ease-in-out;
+    /*  set transition for mouse enter & exit */
+  }
+
+  button:hover #creditcard {
+    transform: translateY(0px);
+    transition: transform 0.2s ease-in-out;
+    /*  overide transition for mouse enter */
+  }
+
+  button:hover #money {
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+    /*  overide transition for mouse enter */
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button:hover .button__text span {
+  transform: translateY(-0.25rem);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background-color: purple;
+  padding: 1rem 90px 1rem 2rem;
+  position: relative;
+  border-radius: 8px;
+  letter-spacing: 0.7px;
+  background-color: #5086bd;
+  color: #fff;
+  font-size: 21px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button__svg {
+  position: absolute;
+  overflow: visible;
+  bottom: 6px;
+  right: 0.2rem;
+  height: 140%;
+}
+
+.button {
+  margin: 2rem;
+}
+
+body {
+  background-image: url("https://media1.giphy.com/media/o0vwzuFwCGAFO/giphy.gif?cid=ecf05e4772vpxujn9ydhwpmd2m24rzsmi2ssha1vxag3sqlu&rid=giphy.gif&ct=g");
+  background-size: contain 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
